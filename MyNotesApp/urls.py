@@ -19,5 +19,6 @@ from note_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r'myapp/', views.checking)
+    path(r'myapp/', views.checking),
+    path(r'del/(?P<pk>\d+)/', views.deleting, name='delf')
 ]
